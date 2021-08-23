@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import s from './Navibar.module.css'
 import {Link} from 'react-router-dom';
 import logo from '../../logo2.jpg'
+import imgTop from '../../imegTop.png'
 import cn from 'classnames';
 
 
@@ -18,16 +19,16 @@ const Navibar = () => {
         
         return false
     }
-  
     
+   
     return (
         <div className={s.header}>
-            <div className={s.imgbackroundblock}>
+            {/* <div className={s.imgbackroundblock}>
                <img
-                src = 'https://candyshopmansion.com/csmwp/wp-content/uploads/2020/09/cinema-screen-scaled.jpg'
+                src = {imgTop}
                 
                 /> 
-            </div>
+            </div> */}
             
             <div className={s.container}>
                 
@@ -39,19 +40,17 @@ const Navibar = () => {
                             /> 
                         </div>
                         
-
+                    
                     {/* <div className={styleBurger.burger} active={} onClick ={()=>{setstyleBurger(togleBurger())}} > */}
                     <div className={cn({[s.burger_active]:active},s.burger)} onClick ={()=>{setActive(togleActive())}} >
                         <span ></span>
                     </div>
                     <div className={cn({[s.headermenu_active]:active},s.headermenu)}>
-                        <Link className={s.headerlink} onMouseEnter={e => {
-                     setStyle({display: 'block'});
-                 }}
-                 onMouseLeave={e => {
-                     setStyle({display: 'none'})
-                 }}>Главная</Link>
-                        <Link className={s.headerlink} >Каталог</Link>
+                        <Link className={s.headerlink}>Главная</Link>
+                        <Link className={s.headerlink} 
+                            onMouseEnter={e => {setStyle({display: 'block'})}}
+                            onMouseLeave={e => {setStyle({display: 'none'})
+                            }}>Каталог</Link>
                         <Link className={s.headerlink} >ТОП-100</Link>
                         <Link className={s.headerlink} >Случайное</Link>
                         <Link className={s.headerlink} >Сообщество</Link>
