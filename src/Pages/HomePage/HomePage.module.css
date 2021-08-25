@@ -1,0 +1,49 @@
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+
+    display:flex;
+    flex-direction: column;
+}
+.content{
+ 
+  flex: 1 1 auto;
+ 
+}
+.search{
+    max-width: 1440px;
+    min-height: 150px;
+    margin: 240px auto;
+    background-color: rgb(232, 198, 255);
+    border-radius: 10px;
+}
+.container{
+    
+}
+.titleSearch{
+    display: flex;
+    background-color: blueviolet;
+    justify-content: center;
+    flex: 1 1 auto;
+    font-size: 24px;
+}
+.search_input{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    
+}
+.search_input input {
+    margin: 0px 0px;
+    border-radius: 15px;
+    border: 1px solid black;
+    min-height: 20px;
+}
+.search_input input:active{
+    border: 1px solid black;
+}
+.search_input button{
+    margin-left: 10px;
+    border: 1px silod black;
+    border-radius: 15px;
+}

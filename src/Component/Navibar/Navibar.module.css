@@ -53,8 +53,7 @@
     
     height: 100%;
     width: 100%;
-        /* object-position: cover;
-    object-position:bottom; */
+
 }
 
 .container:before{
@@ -94,7 +93,7 @@
     z-index: 3;
 }
 .headerlink{
-    padding: 23px 2px;
+    padding: 23px 0px;
     color: #fff;
     text-transform: uppercase;
     font-size: 18px;
@@ -103,14 +102,43 @@
    
     
 }
+.headerlink:last-child{
+    padding: 23px 10px 10px 0px;
+}
+
+
 .headerlink:hover {
-    
+
     background-color: rgb(130, 0, 124);
     transition: 250ms;
 }
 .burger_active{
     display: none;
 }
+
+.buttonkatalog{
+    position: absolute;
+    margin-top: 20px;
+    padding: 35px 10px 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(130, 0, 124);
+
+}
+.buttonkatalog div{
+    text-transform:none;
+    padding-bottom: 5px;
+    
+}
+
+.buttonlink{
+    color: rgb(255, 255, 255);
+    text-decoration-line: none;
+}
+.buttonlink:active{
+    color:rgb(164, 85, 255);
+}
+
+
 
 
 
