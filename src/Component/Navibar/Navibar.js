@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import s from './Navibar.module.css'
 import {Link} from 'react-router-dom';
-import logo from '../../logo2.jpg'
+import logo from '../..//Imeg/logo2.jpg'
 import cn from 'classnames';
 
 

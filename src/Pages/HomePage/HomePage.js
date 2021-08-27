@@ -13,6 +13,15 @@ const HomePage = () =>{
                         <button>Поиск</button>
                     </div>  
                 </div> 
+                <div className={s.mostPopular}>
+                    <div className={s.mostPopularTitle}>
+                        Что популярно сегодня
+                    </div>
+                    <div className={s.blockCardFilms}>
+                        <div className={s.cardFilm}></div>
+
+                    </div>
+                </div>
             </div>
         </div>
     )
